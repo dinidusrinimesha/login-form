@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    color: #333;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 20px 100px;
+    background-image: linear-gradient(to right, rgb(206, 199, 254) , rgb(232, 255, 198));
+
+}
+
+.login-box{
+    max-width: 950px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 0px 19px rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+}
+
+.login-img{
+    height: 80%;
+    background: url(images/login.svg) no-repeat center;
+    background-size: cover;
+    margin-left: 32px;
+}
+
+.login-form{
+    padding: 25px 40px;
+}
+
+h1{
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.form-input{
+    background-color: #fff;
+    width: 100%;
+    padding: 0.2rem 0.2rem;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 4px; 
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.form-input input{
+    width: 100%;
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border: 0;
+    outline: 0;
+}
+
+.form-input img{
+    width: 20px;
+    cursor: pointer;
+    margin-right: 1rem;
+
+}
+
+.form-btn input{
+   width: 100%;
+   padding: 0.5rem 1rem;
+   font-size: 1.1rem;
+   background-color: #7655ed;
+   color: #fff;
+   border: none;
+   transition: 0.3s;
+   border-radius: 4px;
+}
+
+.form-btn input:hover{
+    background-color: #592ff1;
+    cursor: pointer;
+}
+
+.signin{
+    margin-top: 16px;
+    font-size: 0.8rem;
+}
+
+.signin a{
+    color: red;
+    font-weight: bold;
+    text-decoration: none;
+    transition:0.3s;
+}
+
+.signin a:hover{
+    text-decoration: underline;
+}
+
+.loginResult{
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: start;
+    margin-bottom: 12px;
+}
+
+@media screen and (max-width:880px) {
+    .login-box{
+        grid-template-columns: 1fr;
+    }
+
+    .login-img{
+       height: 200px;
+       margin-left: 0;
+       margin-top: 16px; 
+    }
+}

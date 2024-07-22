@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/471622b39d.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class="container">
+
+        <!-- login box section -->
+        <div class="login-box">
+
+            <!-- Login box image -->
+            <div class="login-img"> </div>
+
+            <!-- Login form-->
+            <div class="login-form">
+                <form id="loginForm" onsubmit="return login(event)">
+                    <h1>Login</h1>
+                    <div class="form-input">
+                        <input type="text" placeholder="Username" id="username" required>
+                    </div>
+                    <div class="form-input">
+                        <input type="password" placeholder="Password" id="password" required>
+                        <img src="images/close-eye.png" alt="close-eye" id="eyeclose" onclick="showHide()">
+                        <!-- <i class="fa-solid fa-sm fa-eye-slash" id="eyeclose" onclick="showHide()"></i> -->
+                    </div>
+                    <p id="loginResult" class="loginResult"></p>
+                    <div class="form-btn">
+                        <input type="submit" value="Login">
+                    </div>
+                    <p class="signin">Already have an account ? <span><a href="#">Sign in</a></span></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
