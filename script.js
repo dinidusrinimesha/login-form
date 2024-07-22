@@ -1,6 +1,4 @@
 /* Password Show-Hide */
-
-
 var click = 0;
 function showHide() {
     if (click == 1){
@@ -31,7 +29,7 @@ function login(event) {
     var userValidate = users.find(user => user.username === username && user.password === password);
 
     if(userValidate) {
-        alert('Welcome, ' + username);
+        alert('Hello ' + username + ', Welcome to the System !');
         location.reload();
     }
     else {
